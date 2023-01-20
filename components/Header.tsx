@@ -1,7 +1,7 @@
 
 import  {BellIcon, SearchIcon} from "@heroicons/react/solid"
 import Link from "next/link"
-import {useLayoutEffect,useState } from "react"
+import {useEffect,useState } from "react"
 
 
 
@@ -9,7 +9,7 @@ const Header = ()=> {
     const [isScrolled,setIsScrolled] = useState(false)
   
 
-    useLayoutEffect(()=>{
+    useEffect(()=>{
        
         const handleScroll = ()=>{
             if(window.scrollY > 0){
